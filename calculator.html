@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calcu.css">
+</head>
+<body>
+   <div class="calculator">
+      <h1>calculator</h1>
+
+    <input type="text" id="display" placeholder="0" readonly>
+
+    <div id="keys">
+        <button onclick="clearvalue()" class="operators">AC</button>
+        <button onclick="deleteonevalue()" class="operators">DE</button>
+        <button onclick="appendtodisplay('.')" class="operators">.</button>
+        <button onclick="appendtodisplay('/')" class="operators">/</button>
+        <button onclick="appendtodisplay('7')">7</button>
+        <button onclick="appendtodisplay('8')">8</button>
+        <button onclick="appendtodisplay('9')">9</button>
+        <button onclick="appendtodisplay('*')"class="operators">*</button>
+        <button onclick="appendtodisplay('4')" >4</button>
+        <button onclick="appendtodisplay('5')">5</button>
+        <button onclick="appendtodisplay('6')">6</button>
+        <button onclick="appendtodisplay('-')" class="operators">-</button>
+        <button onclick="appendtodisplay('')">1</button>
+        <button onclick="appendtodisplay('2')">2</button>
+        <button onclick="appendtodisplay('3')">3</button>
+        <button onclick="appendtodisplay('+')"class="operators" >+</button>
+        <button onclick="appendtodisplay('00')">00</button>
+        <button onclick="appendtodisplay('0')">0</button>
+        
+    </div>
+    <button onclick="calculate()"class="operators clear" >=</button> 
+   </div>
+
+    <script src="calcu.js"></script>
+</body>
+</html>
